@@ -1,126 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Internship Application</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    body, html {
-      height: 100%;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .container {
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 20px;
-      padding: 40px;
-      width: 90%;
-      max-width: 600px;
-      backdrop-filter: blur(15px);
-      -webkit-backdrop-filter: blur(15px);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      color: #fff;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
-    }
-
-    marquee {
-      color: #f8e71c;
-      font-size: 1rem;
-      margin-bottom: 20px;
-      text-shadow: 1px 1px 3px #000;
-    }
-
-    h1 {
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 30px;
-      color: #ffffff;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    input, textarea {
-      padding: 12px 15px;
-      border-radius: 10px;
-      border: none;
-      outline: none;
-      background: rgba(255, 255, 255, 0.2);
-      color: #fff;
-      font-size: 1rem;
-    }
-
-    input::placeholder, textarea::placeholder {
-      color: #dcdcdc;
-    }
-
-    textarea {
-      resize: vertical;
-      min-height: 100px;
-    }
-
-    .btn-group {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      margin-top: 20px;
-    }
-
-    .btn {
-      padding: 12px 25px;
-      border: none;
-      background: linear-gradient(45deg, #ff416c, #ff4b2b);
-      color: white;
-      font-weight: bold;
-      border-radius: 30px;
-      cursor: pointer;
-      text-decoration: none;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-    }
-
-    .btn:hover {
-      transform: scale(1.05);
-      box-shadow: 0 6px 20px rgba(0,0,0,0.4);
-    }
-
-    @media (max-width: 500px) {
-      h1 {
-        font-size: 1.5rem;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internships | VaultofCodes</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Import Google Font - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <div class="container">
-    <marquee behavior="alternate">🔥 Apply for Internships Now! Limited Slots Available 🔥</marquee>
-    <h1>Internship Application Form</h1>
-    <form>
-      <input type="text" placeholder="Your Full Name" required>
-      <input type="email" placeholder="Your Email Address" required>
-      <input type="tel" placeholder="Contact Number" required>
-      <textarea placeholder="Why should we select you? (Optional)"></textarea>
+    <div class="content-wrapper">
+        <div class="company-logo-text">
+            VaultofCodes
+        </div>
 
-      <div class="btn-group">
-        <button type="submit" class="btn">Submit</button>
-        <a href="https://example.com/details" class="btn">View Details</a>
-      </div>
-    </form>
-  </div>
+        <h1 class="page-title">Internships</h1>
+
+        <div class="internship-container">
+            <div class="internship-card">
+                <h2>Web Development Internship Program</h2>
+                <ul>
+                    <li><span class="label">Duration:</span> 1 month/2 months</li>
+                    <li><span class="label">Location:</span> Virtual</li>
+                    <li><span class="label">Stipend:</span> -</li>
+                    <li><span class="label">Start date:</span> 05/11/2023</li>
+                </ul>
+                <a href="#" class="details-button">View Details</a>
+            </div>
+
+            <div class="internship-card">
+                <h2>App Development Internship Program</h2>
+                <ul>
+                    <li><span class="label">Duration:</span> 1 month/2 months</li>
+                    <li><span class="label">Location:</span> Virtual</li>
+                    <li><span class="label">Stipend:</span> -</li>
+                    <li><span class="label">Start date:</span> 05/11/2023</li>
+                </ul>
+                <a href="#" class="details-button">View Details</a>
+            </div>
+
+            <div class="internship-card">
+                <h2>Python Programming Internship Program</h2>
+                <ul>
+                    <li><span class="label">Duration:</span> 1 month/2 months</li>
+                    <li><span class="label">Location:</span> Virtual</li>
+                    <li><span class="label">Stipend:</span> -</li>
+                    <li><span class="label">Start date:</span> 05/11/2023</li>
+                </ul>
+                <a href="#" class="details-button">View Details</a>
+            </div>
+
+            <div class="internship-card">
+                <h2>Java Programming Internship Program</h2>
+                <ul>
+                    <li><span class="label">Duration:</span> 1 month/ 2months</li>
+                    <li><span class="label">Location:</span> Virtual</li>
+                    <li><span class="label">Stipend:</span> -</li>
+                    <li><span class="label">Start date:</span> 05/11/2023</li>
+                </ul>
+                <a href="#" class="details-button">View Details</a>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
