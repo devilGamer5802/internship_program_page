@@ -1,0 +1,161 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa; /* Light grey background */
+    color: #343a40; /* Dark grey text */
+    line-height: 1.6;
+    padding: 20px; /* Padding around the content for smaller screens */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.content-wrapper {
+    width: 100%;
+    max-width: 1200px; /* Max width for larger screens */
+    margin: 20px auto;
+}
+
+.company-logo-text {
+    text-align: center;
+    margin-bottom: 30px; /* Space below logo text */
+    font-size: 2.5em; /* Larger font size */
+    font-weight: 700; /* Bold */
+    color: #FF6B6B; /* Coral/red color, like in the image */
+    letter-spacing: 1px;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 2.8em; /* Large and prominent */
+    font-weight: 600;
+    color: #2c3e50; /* A deep, modern blue/grey */
+    margin-bottom: 40px; /* Space below title */
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.page-title::after { /* Subtle underline accent */
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #FF6B6B; /* Accent color */
+    border-radius: 2px;
+}
+
+.internship-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Increased gap for better spacing */
+    justify-content: center; /* Center cards in the container */
+}
+
+.internship-card {
+    background-color: #ffffff; /* White card background */
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); /* Softer, modern shadow */
+    padding: 25px;
+    flex: 1 1 300px; /* Flex properties for responsiveness */
+    max-width: 350px; /* Max width for cards on larger screens */
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.internship-card:hover {
+    transform: translateY(-8px); /* Lift effect on hover */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12); /* Enhanced shadow on hover */
+}
+
+.internship-card h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.internship-card ul {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0;
+    margin-bottom: 20px;
+    flex-grow: 1; /* Allow ul to take available space */
+}
+
+.internship-card ul li {
+    margin-bottom: 10px;
+    color: #555; /* Slightly lighter text for details */
+    font-size: 0.95em;
+    display: flex;
+    align-items: center;
+}
+
+.internship-card ul li::before { /* Custom bullet points */
+    content: '✓'; /* Checkmark or use '•' or an icon font */
+    color: #007bff; /* Blue color for bullet points */
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.internship-card ul li .label {
+    font-weight: 500;
+    color: #444;
+    margin-right: 5px;
+}
+
+.details-button {
+    display: inline-block;
+    background-color: #007bff; /* Bright blue button */
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 500;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: auto; /* Pushes button to the bottom if card heights vary slightly */
+}
+
+.details-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2.2em;
+    }
+    .internship-card {
+        flex-basis: calc(50% - 15px); /* Two cards per row */
+        max-width: none; /* Allow cards to fill space */
+    }
+}
+
+@media (max-width: 480px) {
+    .company-logo-text {
+        font-size: 2em;
+    }
+    .page-title {
+        font-size: 1.8em;
+    }
+    .internship-card {
+        flex-basis: 100%; /* One card per row */
+    }
+    .content-wrapper {
+        padding: 0 10px; /* Less padding on very small screens */
+    }
+     body {
+        padding: 10px;
+    }
+}
